@@ -1,0 +1,9 @@
+@use '../variables' as *;
+
+/*! shared-confirm-form */
+
+#allrecords {
+  [class*='__form-bottom-text'] {
+    @include withActiveLinks;
+  }
+}

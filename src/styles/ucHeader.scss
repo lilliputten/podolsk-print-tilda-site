@@ -1,6 +1,7 @@
 @use '../variables' as *;
 
-/*! Header */
+/*! ucHeader */
+
 .uc-Header {
   @include withActiveLinks;
   // Social icon colors...

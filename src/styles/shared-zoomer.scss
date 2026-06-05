@@ -1,0 +1,15 @@
+@use 'sass:color';
+
+@use '../variables' as *;
+
+/*! shared-zoomer */
+
+.t-zoomer__wrapper {
+  .t-zoomer__comments {
+    background-color: #fff;
+  }
+  .t-zoomer__title {
+    font-weight: bold;
+    color: $goldDark; // color.adjust($goldColor, $lightness: -20%);
+  }
+}

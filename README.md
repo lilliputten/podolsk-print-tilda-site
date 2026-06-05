@@ -6,11 +6,11 @@
 # Compillable js and css assets for podolsk-print site
 
 - Version: 0.0.0
-- Last changes timestamp: 2026.06.05 18:47:58 +0300
+- Last changes timestamp: 2026.06.05 23:47:09 +0300
 
 ## Resources
 
-Site: https://www.podolsk-print.ru/
+Site: https://podolsk-print.ru/
 
 ## Inject mode
 

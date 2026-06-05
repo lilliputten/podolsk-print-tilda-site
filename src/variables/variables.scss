@@ -6,14 +6,15 @@
 
 // Basic brand colors...
 $goldColor: #db7;
+$goldLightest: #fd9;
+$goldLight: #ec8;
+$goldDark: #ba6;
+$goldDarkest: #a95;
+
+// Background color
+$blueDarkColor: #013;
 
 $primaryColor: $goldColor;
-
-// // TODO: Define basic theme parameters?
-// $themeAccentColor: $primaryColor;
-// $themeGrayColor: #333;
-// $textColor: #333;
-// $themeBgColor: $themeGrayColor;
 
 // Delays
 
@@ -32,7 +33,7 @@ $fontSizeSm: 14px; // To seamless integration with the original styles
 
 // Adaptive layout tresholds (according to `zd/static/bundle/index.min.css`)...
 
-// Bootstrap 4 tresholds
+// Bootstrap 4 default tresholds
 // $xxlMediaPx: 1400px; // xxl:extraWide
 // $xlMediaPx: 1200px; // xl:wide
 // $lgMediaPx: 992px; // lg:mobile - Mobile layout treshold
@@ -56,8 +57,7 @@ $thresholds: (
   'lg': $lgMediaPx,
   'md': $mdMediaPx,
   'sm': $smMediaPx,
-  'xs': $xsMediaPx,
-  // 'xxs': $xxsMediaPx,
+  'xs': $xsMediaPx, // 'xxs': $xxsMediaPx,
 );
 $mediaKeys: map.keys($thresholds);
 $mediaSizes: map.values($thresholds);

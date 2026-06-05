@@ -1,0 +1,53 @@
+@use '../variables' as *;
+
+/*! shared-blocks */
+
+.uc-Contacts {
+  @include withBasicActiveLinks;
+}
+.uc-Text,
+.uc-Breadcrumbs,
+.uc-PrivacyForm,
+.uc-Portfolio,
+.uc-Equipment {
+  @include withActiveLinks;
+}
+.uc-Text {
+  #allrecords & a {
+    text-decoration: underline;
+  }
+}
+.uc-Portfolio,
+.uc-Equipment {
+  .t-slds__bgimg {
+    @include selfActiveLink;
+  }
+}
+.uc-Certificates,
+.uc-Microvelvet {
+  .t-img.t-zoomable {
+    @include selfActiveLink;
+  }
+}
+
+.uc-TextWithIcon {
+  .t-col {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    @media (width >= $lgMediaPx) {
+      align-items: center;
+    }
+    @media (width < $lgMediaPx) {
+      flex-direction: column;
+    }
+  }
+  .t1095__textwrapper {
+    @media (width >= $lgMediaPx) {
+      padding: 0;
+    }
+    @media (width < $lgMediaPx) {
+      text-align: center;
+    }
+  }
+}

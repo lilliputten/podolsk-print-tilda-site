@@ -23,7 +23,7 @@ const {
   mdMediaPx,
   smMediaPx,
   xsMediaPx,
-  xxsMediaPx,
+  // xxsMediaPx,
 
   // Media tresholds (all)
   // thresholds,

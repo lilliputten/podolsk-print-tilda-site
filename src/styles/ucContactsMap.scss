@@ -1,0 +1,17 @@
+@use '../variables' as *;
+
+/*! ucContactsMap */
+
+.uc-ContactsMap {
+  @include withActiveLinks;
+  #allrecords & a {
+    text-decoration: underline;
+    color: $goldColor;
+  }
+  // // Social icon colors...
+  // .t-sociallinks__item {
+  //   path {
+  //     fill: $goldColor;
+  //   }
+  // }
+}

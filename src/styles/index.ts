@@ -3,9 +3,16 @@
 import './core-shared.scss';
 import './core-font.scss';
 import './core-utilities.scss';
-// Service...
+// Development...
 
 import './media-indicator.scss';
+// Shared...
+
+import './shared-blocks.scss';
+import './shared-zoomer.scss';
+import './shared-confirm-form.scss';
 // Blocks...
 
-import './Header.scss';
+import './ucHeader.scss';
+import './ucFooter.scss';
+import './ucContactsMap.scss';
