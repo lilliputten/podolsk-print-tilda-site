@@ -1,0 +1,28 @@
+@use 'variables' as *;
+
+// stylelint-disable selector-pseudo-class-no-unknown, property-no-unknown
+:export {
+  primaryColor: #{$primaryColor};
+
+  // Timeouts...
+  transitionTimeMs: #{$transitionTimeMs};
+  animationTimeMs: #{$animationTimeMs};
+  disappearTimeMs: #{$disappearTimeMs};
+
+  // Dimensions...
+  navbarHeightPx: #{$navbarHeightPx};
+
+  // Media tresholds...
+  xxlMediaPx: #{$xxlMediaPx};
+  xlMediaPx: #{$xlMediaPx};
+  lgMediaPx: #{$lgMediaPx}; // Mobile layout treshold
+  mdMediaPx: #{$mdMediaPx};
+  smMediaPx: #{$smMediaPx};
+  xsMediaPx: #{$xsMediaPx};
+  // xxsMediaPx: #{$xxsMediaPx};
+
+  // Media tresholds (all)
+  // thresholds: #{$thresholds};
+  mediaKeys: #{$mediaKeys};
+  mediaSizes: #{$mediaSizes};
+}

@@ -1,0 +1,16 @@
+@use '../variables' as *;
+
+/*! core-font */
+
+// Texts
+.t-input,
+.t-btn,
+.t-descr,
+.t-btnflex__text,
+.t-search-widget__popup-container,
+.t-search-widget__query-result,
+.t-search-widget__result__title,
+.t-search-widget__result__body,
+.t-search-widget__inputcontainer input {
+  font-family: $defaultFont;
+}

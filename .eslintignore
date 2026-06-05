@@ -1,0 +1,47 @@
+# Enable dot files in root folder
+
+!.*
+
+# Disable project generated folders
+
+/.dependencygraph
+/.git
+/.history
+/.husky
+/.next
+/.storybook
+/.vscode
+/.utils
+/build*
+/coverage
+/.idea
+/i18n
+/node_modules
+/public
+/public-src
+/publish
+/types
+/utils
+
+# Log files
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temp & hidden files
+/temp
+**/*_{BACKUP,BASE,LOCAL,REMOTE}_*
+**/*UNUSED
+**/*.bak
+**/*.tmp
+**/.*swp
+**/.*sw?
+**/*_
+/package-lock.*
+/pnpm-lock.yaml
+.DS_Store
+
+# Configuration files validated by their respective tools
+/tsconfig.json
+/src/assets/

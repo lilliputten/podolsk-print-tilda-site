@@ -1,0 +1,28 @@
+{# ex: set ft=htmldjango : #}
+{% load static pages_static %}
+
+{% comment - Stopped using online google fonts in favor locally cached resources, see `public/assets/fonts/inter/`. %}
+<!-- Set up google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://googleapis.com" rel="stylesheet">
+{% endcomment %}
+
+<!-- Use local copy of Inter google font -->
+{% if debug and USE_DEV_SERVER %}
+<link rel="stylesheet" type="text/css" href="http://localhost:3000/zd/static/bundle/compiled-assets/assets/fonts/inter-4.1.1/inter.css" />
+{% else %}
+<link rel="stylesheet" type="text/css" href="/static/bundle/compiled-assets/assets/fonts/inter-4.1.1/inter.css" />
+{% endif %}
+
+<!-- Include lucide icons -->
+{# @see all icons: https://lucide.dev/icons/ #}
+{% if not debug %}
+<script src="https://unpkg.com/lucide@latest"></script>
+{% elif USE_DEV_SERVER %}
+<script src="http://localhost:3000/zd/static/bundle/compiled-assets/assets/vendor/lucide-1.17.0/dist/umd/lucide.min.js"></script>
+{% else %}
+<script src="/static/bundle/compiled-assets/assets/vendor/lucide-1.17.0/dist/umd/lucide.min.js"></script>
+{% endif %}
+
+<!-- Include compiled styles (webpack generated) -->

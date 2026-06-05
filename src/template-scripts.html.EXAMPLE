@@ -1,0 +1,8 @@
+{# ex: set ft=htmldjango : #}
+{% load static pages_static %}
+
+<!-- Initailize lucide icons (see cdn load tags in the head) -->
+{# @see all icons: https://lucide.dev/icons/ #}
+<script>if (typeof lucide !== 'undefined') lucide.createIcons();</script>
+
+<!-- Include compiled scripts (webpack generated) -->

@@ -1,0 +1,41 @@
+@use 'sass:color';
+
+@use '../variables' as *;
+
+/*! media-indicator */
+
+@if $isDev == true {
+  .media-indicator {
+    overflow: hidden;
+    position: fixed;
+    cursor: pointer;
+    font-size: 12px;
+    $size: 3em;
+    @include size($size);
+    bottom: 1em;
+    left: 1em;
+    border-radius: 100%;
+    background-color: #000;
+    border: 1px solid color.change(#fff, $alpha: 0.2);
+    transition: all $transitionTimeMs;
+    color: color.change(#fff, $alpha: 0.8);
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    user-select: none;
+    opacity: 0.6;
+    & > div {
+      flex: 1;
+      height: $size;
+      text-align: center;
+      line-height: $size;
+    }
+    &:not(.hidden) {
+      display: flex;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

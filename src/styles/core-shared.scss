@@ -1,0 +1,30 @@
+@use '../variables' as *;
+
+/*! core-shared */
+
+// Prevent capture of inaccurate click
+a {
+  -webkit-user-drag: none;
+}
+
+// Misc styles
+
+.hidden {
+  display: none;
+}
+
+.disabled {
+  @include disabled;
+}
+
+.self-active-link {
+  @include selfActiveLink;
+}
+.with-active-links {
+  @include withActiveLinks;
+}
+.with-basic-active-links {
+  @include withBasicActiveLinks;
+}
+
+// NOTE: See also `core-utilities.scss` for shared utilities

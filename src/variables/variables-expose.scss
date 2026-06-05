@@ -1,0 +1,32 @@
+@use 'variables' as *;
+@use 'utils' as *;
+
+/*! variables-expose */
+
+:root {
+  --primaryColor: #{$primaryColor};
+  --primaryRGB: #{rgbComponents($primaryColor)};
+
+  // UNUSED (temporarily?): Create css variable spreads for the basic colors, to use them like these:
+  // - Basic color: `var(--color-lime-500)` <- `$limeColor`
+  // - A step lighter: `var(--color-lime-400)` <- `color.adjust($limeColor, $lightness: 10%)`
+  // - Half transparent: `rgba(var(--color-lime-500-RGB) / 50%)` <- `color.adjust($limeColor, $alpha: -0.5)`
+  // - A step lighter, half transparent: `rgba(var(--color-lime-400-RGB) / 50%)` <- `color.adjust($limeColor, $alpha: -0.5, $lightness: 10%)`
+  // @include defineThemeColor('bordeaux', $bordeauxColor);
+  // @include defineThemeColor('blue', $goldColor);
+  // @include defineThemeColor('lime', $limeColor);
+
+  // NOTE: Are these css variables required?
+  --defaultFont: #{$defaultFont};
+  // --titleFont: #{$titleFont};
+  --defaultFontSize: #{$defaultFontSize};
+
+  // Media tresholds
+  --xxlMediaPx: #{$xxlMediaPx};
+  --xlMediaPx: #{$xlMediaPx};
+  --lgMediaPx: #{$lgMediaPx}; // Mobile layout treshold
+  --mdMediaPx: #{$mdMediaPx};
+  --smMediaPx: #{$smMediaPx};
+  --xsMediaPx: #{$xsMediaPx};
+  // --xxsMediaPx: #{$xxsMediaPx};
+}

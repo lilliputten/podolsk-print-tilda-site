@@ -1,0 +1,84 @@
+@use 'sass:math';
+@use 'sass:map';
+@use 'sass:list';
+
+@use 'utils' as *;
+
+// Basic brand colors...
+$goldColor: #db7;
+
+$primaryColor: $goldColor;
+
+// // TODO: Define basic theme parameters?
+// $themeAccentColor: $primaryColor;
+// $themeGrayColor: #333;
+// $textColor: #333;
+// $themeBgColor: $themeGrayColor;
+
+// Delays
+
+$transitionTimeMs: 250ms;
+$animationTimeMs: 400ms;
+$disappearTimeMs: 1000ms;
+
+// Fonts
+
+$defaultFont: 'PT Sans', Arial, sans-serif;
+$titleFont: $defaultFont;
+$defaultFontSize: 1em;
+
+$fontSizeDefault: $defaultFontSize;
+$fontSizeSm: 14px; // To seamless integration with the original styles
+
+// Adaptive layout tresholds (according to `zd/static/bundle/index.min.css`)...
+
+// Bootstrap 4 tresholds
+// $xxlMediaPx: 1400px; // xxl:extraWide
+// $xlMediaPx: 1200px; // xl:wide
+// $lgMediaPx: 992px; // lg:mobile - Mobile layout treshold
+// $mdMediaPx: 768px; // md:small
+// $smMediaPx: 576px; // sm:tiny
+// $xsMediaPx: 480px; // xs:micro
+// $xxsMediaPx: 320px; // xxs:extraMicro
+
+// Tilda tresholds
+$xxlMediaPx: 1400px; // xxl:extraWide
+$xlMediaPx: 1200px; // xl:wide
+$lgMediaPx: 980px; // lg:mobile - Mobile layout treshold
+$mdMediaPx: 680px; // md:small
+$smMediaPx: 480px; // sm:tiny
+$xsMediaPx: 320px; // xs:micro
+// $xxsMediaPx: 320px; // xxs:extraMicro
+
+$thresholds: (
+  'xxl': $xxlMediaPx,
+  'xl': $xlMediaPx,
+  'lg': $lgMediaPx,
+  'md': $mdMediaPx,
+  'sm': $smMediaPx,
+  'xs': $xsMediaPx,
+  // 'xxs': $xxsMediaPx,
+);
+$mediaKeys: map.keys($thresholds);
+$mediaSizes: map.values($thresholds);
+
+// Hover
+
+// Hover media constant, use as `@include hoverMedia { &:hover { ... } }`, see also mixins `hoverMedia` and `safeHover`
+$hoverMediaRules: '(hover: hover) and (pointer: fine)';
+
+// Default hover opacity
+$hoverOpacity: 0.75;
+
+// Navbar
+
+$navbarHeightPx: 60px;
+
+// Mobile panel
+$mobilePanelWidth: 30em;
+
+// Use blue style for the header block (2nd header level) if compact mainheader (the variable must be defined)
+$useBlueCompact: true;
+
+// Use blue background for the preheader (1st header level) (the variable must be defined)
+$useBluePreheader: true;

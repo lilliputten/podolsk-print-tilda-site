@@ -1,0 +1,26 @@
+/*
+vim: ft=jsonc
+@desc Typescript compiler configuration
+@changed 2026.05.17, 23:01
+@see https://www.typescriptlang.org/it/tsconfig/
+*/
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "es6",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "jsx": "react",
+    "types": ["node"],
+    "paths": {
+      "src/*": ["./src/*"]
+    }
+  },
+  "files": ["src/root.ts", "src/custom.d.ts"],
+  "typeRoots": ["src/@types/**/*"],
+  "include": ["src/"]
+}

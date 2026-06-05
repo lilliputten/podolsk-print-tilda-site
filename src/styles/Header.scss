@@ -1,0 +1,12 @@
+@use '../variables' as *;
+
+/*! Header */
+.uc-Header {
+  @include withActiveLinks;
+  // Social icon colors...
+  .t-sociallinks__item {
+    path {
+      fill: $goldColor;
+    }
+  }
+}

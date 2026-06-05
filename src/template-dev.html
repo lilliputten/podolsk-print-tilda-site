@@ -1,0 +1,25 @@
+<script type="text/javascript">
+  // DEBUG: Show a dev mode warning (if the script hasn't been loaded)
+  function devScriptError(arg) {
+    requestAnimationFrame(function delayed() {
+      const body = document.body;
+      const divNode = document.createElement('div');
+      divNode.classList.add('devScriptError');
+      divNode.innerText = 'Compiled scripts has not loaded.';
+      body.prepend(divNode);
+    });
+  }
+</script>
+<style type="text/css">
+  .devScriptError {
+    background-color: red;
+    color: white;
+    position: fixed;
+    z-index: 99999999;
+    top: 0;
+    width: 100%;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    text-align: center;
+  }
+</style>
