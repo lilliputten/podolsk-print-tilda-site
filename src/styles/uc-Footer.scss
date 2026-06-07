@@ -1,13 +1,20 @@
 @use '../variables' as *;
 
-/*! ucHeader */
+/*! uc-Footer */
 
-.uc-Header {
+.uc-Footer {
   @include withActiveLinks;
+  // Social icon colors...
+  a {
+    color: $goldColor !important;
+  }
   // Social icon colors...
   .t-sociallinks__item {
     path {
       fill: $goldColor;
     }
+  }
+  .t977__col-inner:empty {
+    display: none;
   }
 }

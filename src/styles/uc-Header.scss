@@ -1,0 +1,62 @@
+@use '../variables' as *;
+
+/*! uc-Header */
+
+// See also the bottom uc-BottomSpace
+.uc-HeaderSpace {
+  height: 100px;
+  @media (width < $lgMediaPx) {
+    height: 90px;
+  }
+}
+
+.uc-Header {
+  @include withActiveLinks;
+  // Social icon colors...
+  .t-sociallinks__item {
+    path {
+      fill: $goldColor;
+    }
+  }
+  @media (width < $lgMediaPx) {
+    .t-menu-base__imglogo,
+    .tmenu-mobile__imglogo {
+      $size: 60px;
+      height: $size;
+      width: auto !important;
+    }
+  }
+  // Don't forget to adjust `uc-HeaderSpace` sizes above
+  // Main sections (logo, menu, extra)
+  .t-menu-base__logowrapper {
+    flex: 0 !important;
+    flex-shrink: 0;
+    @media (width >= $lgMediaPx) {
+      margin: 10px 0;
+    }
+  }
+  .t-menu-base__leftwrapper {
+    flex: 1 !important;
+  }
+  .t-menu-base__rightwrapper {
+    flex-shrink: 0;
+  }
+  // Right button
+  .t-btn {
+    $hPadding: 1em;
+    padding-left: $hPadding;
+    padding-right: $hPadding;
+  }
+  // .t770__leftwrapper .t770__descr {
+  //   font-size: 100%;
+  //   padding: 0;
+  // }
+  // @media (width >= $lgMediaPx) {
+  //   .t770__leftwrapper .t770__additionalwrapper {
+  //     // text-align: left;
+  //   }
+  //   .t770__rightwrapper .t770__additionalwrapper {
+  //     text-align: right;
+  //   }
+  // }
+}

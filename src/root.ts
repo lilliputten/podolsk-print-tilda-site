@@ -4,6 +4,7 @@ import './styles';
 
 import { isDev } from './core/constants/isDev';
 import { initMediaThresholdsIndicators } from './scripts/media-indicator';
+import { initProductionIndex } from './scripts/ProductionIndex';
 import { initSharedConfirmForm } from './scripts/shared-confirm-form';
 
 /** Print app info */
@@ -20,6 +21,7 @@ function initPage() {
     initMediaThresholdsIndicators();
   }
   initSharedConfirmForm();
+  initProductionIndex();
   /* // Forcibely update components' dimensions
    * window.dispatchEvent(new Event('resize'));
    */

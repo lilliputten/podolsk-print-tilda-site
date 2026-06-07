@@ -1,0 +1,78 @@
+@use 'sass:color';
+
+@use '../variables' as *;
+
+/*! uc-ProductionIndex */
+
+// #allrecords .uc-StoreGrid,
+#allrecords .uc-ProductionIndex {
+  // @include withActiveLinks;
+  .t-bgimg,
+  .t-img {
+    border-radius: 10px;
+    border: 1px solid color.change(#000, $alpha: 0.2);
+  }
+  a {
+    opacity: 1;
+    color: $goldColor;
+  }
+  @media (width <= $lgMediaPx) {
+    .t1095__imgwrapper {
+      max-width: 150px;
+    }
+  }
+  @media (width <= $mdMediaPx) {
+    .t-store__card {
+      flex-direction: column;
+    }
+    .t-store__card__imgwrapper_column {
+      margin-bottom: 15px;
+    }
+    .t-item .t-cell:first-child {
+      display: block;
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+  }
+  .t-item {
+    // .t-cell .t-name,
+    // .t-store__card__title {
+    //   &:after {
+    //     @include SectionTitleDelim($size: 2px, $width: 200px, $left: true);
+    //   }
+    // }
+    &,
+    .t-name,
+    .t-descr,
+    a {
+      color: #ccc;
+    }
+    &.has-link {
+      cursor: pointer;
+      @include transition;
+      $color: #000;
+      &,
+      .t-img,
+      .t-name,
+      .t-descr,
+      a {
+        @include transition;
+        color: $color;
+        opacity: 1;
+      }
+      @include safeHover {
+        // opacity: $hoverOpacity;
+        &,
+        .t-name,
+        .t-descr,
+        a {
+          color: $goldDark;
+          text-decoration: none !important;
+        }
+        .t-img {
+          opacity: $hoverOpacity;
+        }
+      }
+    }
+  }
+}
