@@ -1,8 +1,8 @@
 {
   "name": "podolsk-print-tilda-site",
   "version": "0.0.0",
-  "timetag": "260607-2352",
-  "timestamp": "2026.06.07 23:52:27 +0300",
+  "timetag": "260608-1940",
+  "timestamp": "2026.06.08 19:40:29 +0300",
   "changed": "2026.06.05, 19:27",
   "description": "Compillable js and css assets for podolsk-print site",
   "main": "index.html",

@@ -47,16 +47,24 @@
     padding-left: $hPadding;
     padding-right: $hPadding;
   }
-  // .t770__leftwrapper .t770__descr {
-  //   font-size: 100%;
-  //   padding: 0;
-  // }
-  // @media (width >= $lgMediaPx) {
-  //   .t770__leftwrapper .t770__additionalwrapper {
-  //     // text-align: left;
-  //   }
-  //   .t770__rightwrapper .t770__additionalwrapper {
-  //     text-align: right;
-  //   }
-  // }
+  // Submenu
+  .t-menusub__menu {
+  }
+  .t-menu-base {
+    .t-active {
+      text-decoration: underline !important;
+      opacity: 1;
+      @media (width < $lgMediaPx) {
+        --menusub-active-color: #fff;
+        // color: #fff !important;
+      }
+    }
+  }
+  .t-menusub__innermenu-content {
+    padding: 0.75em 1em;
+    @media (width < $lgMediaPx) {
+      padding-top: 1.25em;
+      padding-bottom: 0.5em;
+    }
+  }
 }
