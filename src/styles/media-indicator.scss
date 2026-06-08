@@ -2,9 +2,9 @@
 
 @use '../variables' as *;
 
-/*! media-indicator */
-
 @if $isDev == true {
+  /*! media-indicator */
+
   .media-indicator {
     overflow: hidden;
     position: fixed;

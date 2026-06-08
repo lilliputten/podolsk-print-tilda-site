@@ -17,14 +17,12 @@
     text-decoration: underline;
   }
 }
-.uc-Portfolio,
-.uc-Equipment {
+.uc-Portfolio {
   .t-slds__bgimg {
     @include selfActiveLink;
   }
 }
-.uc-Certificates,
-.uc-Microvelvet {
+.uc-Certificates {
   .t-img.t-zoomable {
     @include selfActiveLink;
   }
@@ -52,3 +50,6 @@
   }
 }
 
+.t-carousel__zoomed {
+  background-color: $blueDarkColor;
+}

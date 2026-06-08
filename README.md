@@ -6,7 +6,7 @@
 # Compillable js and css assets for podolsk-print site
 
 - Version: 0.0.0
-- Last changes timestamp: 2026.06.07 23:52:27 +0300
+- Last changes timestamp: 2026.06.08 19:40:29 +0300
 
 ## Resources
 
@@ -27,11 +27,7 @@ To populate built assets in the specific destination (the target project, for in
 
 ## Fonts
 
-https://fonts.google.com/specimen/PT+Sans
-
-```
-https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap
-```
+https://fonts.google.com/specimen/Manrope
 
 ## Optimization of svgo assets
 
